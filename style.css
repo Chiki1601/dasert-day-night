@@ -1,0 +1,121 @@
+body {
+  background: #8bc4c4;
+  -webkit-animation: 5s linear infinite alternate dusk-dawn-movement;
+          animation: 5s linear infinite alternate dusk-dawn-movement;
+}
+
+.sun-and-moon-wrapper {
+  width: 100vh;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  -webkit-animation: 10s linear infinite sun-moon-movement;
+          animation: 10s linear infinite sun-moon-movement;
+}
+
+.sun {
+  width: 200px;
+  height: 200px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
+.moon {
+  width: 200px;
+  height: 200px;
+  background: salmon;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+.soil {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: wheat;
+}
+
+.mountain1 {
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+  border-left: 190px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 200px solid wheat;
+}
+
+.mountain2 {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  border-left: 190px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid wheat;
+}
+
+.mountain3 {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border-left: 190px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid wheat;
+}
+
+.red-mountain {
+  position: absolute;
+  bottom: 45%;
+  left: 20%;
+  border-left: 180px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 200px solid salmon;
+}
+
+.yellow-mountain {
+  position: absolute;
+  bottom: 42%;
+  left: 50%;
+  border-left: 180px solid transparent;
+  border-right: 155px solid transparent;
+  border-bottom: 160px solid orange;
+}
+
+@-webkit-keyframes dusk-dawn-movement {
+  from {
+    background: #8bc4c4;
+  }
+  to {
+    background: darkslategray;
+  }
+}
+
+@keyframes dusk-dawn-movement {
+  from {
+    background: #8bc4c4;
+  }
+  to {
+    background: darkslategray;
+  }
+}
+@-webkit-keyframes sun-moon-movement {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sun-moon-movement {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
